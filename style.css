@@ -1,0 +1,44 @@
+.navbar {
+	height: 50px;
+}
+ul.menu {
+	background: orange;
+	list-style: none;
+	display: block; /* Отображение эл. как блочного*/
+}
+ul.menu > li {
+	float: left;
+}
+ul.menu > li > a {
+	display: block;
+	padding: 10px;
+	color: white;
+	background: orange;
+}
+ul.menu > li > a:hover {
+	background: red;
+	color: black;
+}
+
+ul.submenu {
+	display: none; /* Временно удаляет эл. из документа*/
+	background: orange;
+}
+ul.submenu > li {
+	display: block;
+	background: orange;
+	padding: 10px;
+}
+ul.submenu > li > a {
+	display: block;
+	color: white;
+}
+ul.menu > li:hover > ul.submenu {
+	display: block;
+	background: orange;
+	color: black
+}
+ul.menu > li:hover > ul.submenu> li:hover {
+	color: black!important;
+	font-size: 20px;
+}
